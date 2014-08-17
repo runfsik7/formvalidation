@@ -1,0 +1,155 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.contactFormBLock{
+    width: 380px;
+    margin:25px auto 0 auto;
+}
+
+form#ContactForm{
+    font-family: Arial;
+}
+
+form#ContactForm legend{
+    font-size: 1.3em;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+
+form#ContactForm .formRow, form#ContactForm .formSelectRow{
+    line-height: 1.6em;
+    margin-bottom: 5px;
+    font-size: 0.9em;
+    width: 360px;
+    padding: 10px;
+    position: relative;
+    border: 1px solid rgb(221, 221, 221);
+    background-color: #F3F0F0;
+}
+
+form#ContactForm input[type='text'], form#ContactForm input[type='number']{
+    width: 140px;
+    padding: 0px 5px;
+    color: #999;
+    font-style: italic;
+}
+
+form#ContactForm input[type='submit']{
+    border: 0px;
+    background: #1a90d0;
+    color: white;
+    height: 25px;
+    width: 100%;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+form#ContactForm input[type='submit']:hover{
+    box-shadow: 0px 0px 3px 3px #aaa;
+}
+
+form#ContactForm label{
+    display: block;
+    float: left;
+    width: 185px;
+    text-align: right;
+    padding-right: 10px;
+}
+
+form#ContactForm .formRow .errorMsg{
+    position: absolute;
+    display: none;
+    right: -267px;
+    text-align: left;
+    width: 260px;
+    top: 10px;
+    color: red;
+    font-style: italic;
+    box-shadow: 1px 1px 1px 1px #eee;
+}
+
+form#ContactForm .formRow.invalid .errorMsg{
+    display: block;
+}
+
+.required{
+    color:red;
+}
+
+.FormFirstRow{
+    font-size:0.8em;
+    margin-bottom: 7px;
+}
+
+
+form#ContactForm select{
+    width: 150px;
+    padding: 0px 5px;
+    color: #999;
+    font-style: italic;
+    background-color: white;
+    height: 19px;
+    line-height: 19px;
+}
+
+.questionTab img{
+    width: 20px;
+    height: auto;
+}
+
+.shortHint{
+    position: absolute;
+    display: none;
+    width: 140px;
+    top: -49px;
+    font-size: 0.8em;
+    background-color: white;
+    border: 1px solid black;
+    padding: 5px 10px;
+    left: 19px;
+    line-height: 1.4em;
+    font-style:italic;
+}

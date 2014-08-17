@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+        <!-- 
+        Project: Form Validation Using JavaScript
+        Author: Jevgenijs Migusa    
+        Email: runfsik7@gmail.com
+        -->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Contact Form</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body>
+    <div class='contactFormBLock'>
+        <form id='ContactForm' name='ContactForm' method='post' action='contactForm.php'>
+            <fieldset>
+                <legend>Contact Form</legend>
+                <div class='FormFirstRow'>
+                    <span class='required'>*</span> - required field
+                </div>
+                <div class='formRow'>
+                    <label>First Name:<span class='required'>*</span></label>
+                    <input type='text' name='fName' class='req' value='Enter First Name' onfocus="if(this.value=='Enter First Name'){this.value=''}" onblur="if(this.value==''){this.value='Enter First Name'}" maxlength="15" />
+                    <span class='errorMsg'>You must enter a first name!</span>
+                </div>
+                <div class='formRow'>
+                    <label>Last Name:<span class='required'>*</span></label>
+                    <input type='text' name='lName' class='req' value="Enter Last Name" onfocus="if(this.value=='Enter Last Name'){this.value=''}" onblur="if(this.value==''){this.value='Enter Last Name'}" maxlength="15" />
+                    <span class='errorMsg'>You must enter a last name!</span>
+                </div>
+                <div class='formRow'>
+                    <label>Title:<span class='required'>*</span></label>
+                    <select name='title' id='title'>
+                        <option value='false' selected='selected'>Select title</option>
+                        <option value='mr'>Mr</option>
+                        <option value='ms'>Ms</option>
+                        <option value='mrs'>Mrs</option>
+                        <option value='miss'>Miss</option>
+                        <option value='master'>Master</option>
+                    </select>
+                    <span class='errorMsg'>You must select a title!</span>
+                </div>
+                <div class='formRow'>
+                    <div class='shortHint'>If you do not know your ZHA number, please contact your GP</div>
+                    <label><span class='questionTab'><img src='question.png' alt='question image' /></span>Health Authority Number:<span class='required'>*</span></label>
+                    <input type='text' id='zha' name='zha' class='req' value="Enter ZHA Number" onfocus="if(this.value=='Enter ZHA Number'){this.value=''}" onblur="if(this.value==''){this.value='Enter ZHA Number'}" maxlength="9" />
+                    <span class='errorMsg'>You must enter a valid ZHA number!</span>
+                </div>
+                <div class='formRow'>
+                    <label>Email:<span class='required'>*</span></label>
+                    <input type='text' id='email' name='email' class='req' value="Enter Email" onfocus="if(this.value=='Enter Email'){this.value=''}" onblur="if(this.value==''){this.value='Enter Email'}"  maxlength="50" />
+                    <span class='errorMsg'>You must enter an email!</span>
+                </div>
+                 <div class='formRow'>
+                    <label>Telephone Number:</label>
+                    <input type='text' name='phone' value="Enter Telephone Number" onfocus="if(this.value=='Enter Telephone Number'){this.value=''}" onblur="if(this.value==''){this.value='Enter Telephone Number'}" maxlength="13" />
+                </div>
+                <div class='formRow'>
+                    <input type='submit' value='Submit Form'/>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    </body>
+</html>
